@@ -1,0 +1,205 @@
+{
+  "meta": {
+    "siteName": "AtticaPro",
+    "defaultTitle": "AtticaPro | Insulation & Painting in Attica",
+    "defaultDescription": "Permanent solutions for humidity, insulation and space renovation across Attica. Free estimate, guaranteed quality."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "insulation": "Insulation",
+    "painting": "Painting",
+    "portfolio": "Our Work",
+    "knowledgeHub": "Knowledge Hub",
+    "contact": "Contact",
+    "getQuote": "Free Estimate"
+  },
+  "hero": {
+    "eyebrow": "Professional insulation & painting in Attica",
+    "title": "Permanent solutions for <mark>humidity</mark> and space renovation in Attica",
+    "subtitle": "Over 12 years of experience in insulation, waterproofing and painting. We eliminate humidity at its root and give new life to your home or business.",
+    "ctaPrimary": "Free Estimate",
+    "ctaSecondary": "View Our Work",
+    "badgeNumber": "12+",
+    "badgeLabel": "years on the tools",
+    "statYears": "Years of Experience",
+    "statProjects": "Completed Projects",
+    "statWarranty": "Years of Warranty"
+  },
+  "servicesSnippet": {
+    "title": "Our Services",
+    "subtitle": "Complete insulation and painting solutions, tailored to your space.",
+    "insulationTitle": "Insulation & Waterproofing",
+    "insulationDesc": "Permanent treatment of humidity, roofs, walls and basements with modern materials.",
+    "paintingTitle": "Professional Painting",
+    "paintingDesc": "Interior & exterior painting, facade renovation and decorative finishes.",
+    "learnMore": "Learn More"
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Trust is built with projects, not words.",
+    "items": [
+      {
+        "name": "Eleni Papadopoulou",
+        "location": "Chalandri",
+        "text": "After years of basement humidity, the crew solved the problem permanently. Excellent work and consistency.",
+        "rating": 5
+      },
+      {
+        "name": "Giorgos Ioannidis",
+        "location": "Glyfada",
+        "text": "Our roof was fully waterproofed and the facade painting makes the house look brand new.",
+        "rating": 5
+      },
+      {
+        "name": "Maria Konstantinou",
+        "location": "Marousi",
+        "text": "Very professional, kept the delivery schedule and the price was fair for the quality of work.",
+        "rating": 5
+      }
+    ]
+  },
+  "process": {
+    "eyebrow": "How we work",
+    "title": "No surprises, no hidden costs",
+    "subtitle": "One clear path, from the first call to sweeping up when we're done.",
+    "steps": [
+      {
+        "title": "Call or message us",
+        "text": "Describe the problem — a photo helps, but it's not required."
+      },
+      {
+        "title": "On-site inspection",
+        "text": "We come out, measure, and explain what's wrong and what it needs — no jargon."
+      },
+      {
+        "title": "Written quote",
+        "text": "A fixed price before we start. What we agree on is what you pay."
+      },
+      {
+        "title": "Work & clean-up",
+        "text": "We keep to the schedule and leave the space as clean as we found it."
+      }
+    ]
+  },
+  "recentWork": {
+    "title": "Recent Work",
+    "subtitle": "A glimpse of the most recent transformations we've completed.",
+    "viewAll": "View All Projects"
+  },
+  "insulationPage": {
+    "title": "Insulation & Waterproofing",
+    "subtitle": "Permanent solutions against humidity, with high-durability materials and 12+ years of expertise.",
+    "heroCta": "Request Free Estimate",
+    "sections": [
+      {
+        "title": "Roof Waterproofing",
+        "text": "We apply elastomeric bituminous membranes and cool-roof materials for complete roof waterproofing, ensuring long-term protection from leaks."
+      },
+      {
+        "title": "Wall & Basement Insulation",
+        "text": "We treat rising damp with specialized renders and cementitious waterproofing coatings, stopping the problem at its root."
+      },
+      {
+        "title": "External Wall Thermal Insulation",
+        "text": "External thermal insulation composite systems (ETICS) that reduce energy loss by up to 40% and upgrade the building's appearance."
+      },
+      {
+        "title": "Bathroom & Wet Area Waterproofing",
+        "text": "Specialized waterproofing systems under tiles that prevent water penetration into adjacent spaces."
+      }
+    ],
+    "whyTitle": "Why Trust Us",
+    "whyItems": [
+      "Free site inspection and detailed cost estimate",
+      "Certified materials from leading manufacturers",
+      "Written warranty on all work performed",
+      "Clean and organized way of working"
+    ]
+  },
+  "paintingPage": {
+    "title": "Professional Painting",
+    "subtitle": "Interior and exterior painting with excellent technical training and attention to detail.",
+    "heroCta": "Request Free Estimate",
+    "sections": [
+      {
+        "title": "Interior Painting",
+        "text": "We use certified eco-friendly paints, with meticulous surface preparation (filling, priming) for a flawless finish."
+      },
+      {
+        "title": "Exterior Painting & Facades",
+        "text": "Durable acrylic and silicone-based paints that protect the facade from weather conditions for years."
+      },
+      {
+        "title": "Decorative Finishes",
+        "text": "Special decorative renders, textured finishes and cement-look finishes for a modern aesthetic."
+      },
+      {
+        "title": "Anti-Rust Protection for Metal Surfaces",
+        "text": "Painting of railings, doors and metal structures with long-lasting anti-corrosion systems."
+      }
+    ],
+    "whyTitle": "Why Trust Us",
+    "whyItems": [
+      "Protection of furniture & floors during work",
+      "Completion within the agreed timeline",
+      "Quality materials from leading paint manufacturers",
+      "Site clean-up after completion"
+    ]
+  },
+  "portfolioPage": {
+    "title": "Our Work",
+    "subtitle": "Explore real transformations with the interactive Before/After tool.",
+    "filterAll": "All",
+    "filterInsulation": "Insulation",
+    "filterPainting": "Painting",
+    "dragHint": "Drag to compare"
+  },
+  "knowledgeHubPage": {
+    "title": "Knowledge Hub",
+    "subtitle": "Practical tips and technical knowledge on humidity, insulation and painting.",
+    "readMore": "Read More",
+    "backToHub": "Back to Knowledge Hub",
+    "minRead": "min read"
+  },
+  "contactPage": {
+    "title": "Get In Touch",
+    "subtitle": "Request your free estimate today. We respond promptly.",
+    "formTitle": "Send us a message",
+    "nameLabel": "Full Name",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email",
+    "emailPlaceholder": "email@example.com",
+    "phoneLabel": "Phone",
+    "phonePlaceholder": "69XXXXXXXX",
+    "messageLabel": "Message",
+    "messagePlaceholder": "Describe what you need...",
+    "submit": "Send Message",
+    "submitting": "Sending...",
+    "successMessage": "Thank you! Your message has been sent. We'll contact you shortly.",
+    "errorMessage": "Something went wrong. Please try again or call us directly.",
+    "directTitle": "Direct Contact",
+    "callUs": "Call Us",
+    "whatsapp": "WhatsApp",
+    "viber": "Viber",
+    "areaTitle": "Service Area",
+    "areaText": "We serve all of Attica: Athens, Piraeus, Eastern & Western Suburbs."
+  },
+  "footer": {
+    "tagline": "Permanent insulation and painting solutions for your home and business.",
+    "quickLinks": "Quick Links",
+    "servicesTitle": "Services",
+    "contactTitle": "Contact",
+    "rights": "All rights reserved."
+  },
+  "fab": {
+    "call": "Call",
+    "whatsapp": "WhatsApp"
+  },
+  "common": {
+    "categoryInsulation": "Insulation",
+    "categoryPainting": "Painting",
+    "before": "Before",
+    "after": "After"
+  }
+}
