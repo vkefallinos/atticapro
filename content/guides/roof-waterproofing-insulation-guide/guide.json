@@ -1,0 +1,31 @@
+{
+  "category": "insulation",
+  "coverImage": "/images/articles/roof-waterproofing-insulation-guide.svg",
+  "date": "2025-05-20",
+  "title": {
+    "el": "Στεγανοποίηση & Θερμομόνωση Ταράτσας: Ο Πλήρης Οδηγός",
+    "en": "Roof Waterproofing & Insulation: The Complete Guide"
+  },
+  "excerpt": {
+    "el": "Γιατί «στάζει» η ταράτσα σας, ποια συστήματα στεγανοποίησης υπάρχουν και πώς η θερμομόνωση μειώνει τους λογαριασμούς. Σε τέσσερα μέρη.",
+    "en": "Why your roof leaks, which waterproofing systems exist, and how insulation cuts your energy bills. In four parts."
+  },
+  "chapters": [
+    {
+      "slug": "why-roofs-fail",
+      "title": { "el": "Γιατί Αστοχούν οι Ταράτσες", "en": "Why Flat Roofs Fail" }
+    },
+    {
+      "slug": "warning-signs",
+      "title": { "el": "Διαβάζοντας τα Προειδοποιητικά Σημάδια", "en": "Reading the Warning Signs" }
+    },
+    {
+      "slug": "waterproofing-systems",
+      "title": { "el": "Συστήματα Στεγανοποίησης", "en": "Waterproofing Systems Compared" }
+    },
+    {
+      "slug": "insulation-cost-maintenance",
+      "title": { "el": "Θερμομόνωση, Κόστος & Συντήρηση", "en": "Insulation, Cost & Maintenance" }
+    }
+  ]
+}

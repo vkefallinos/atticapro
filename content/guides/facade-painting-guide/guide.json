@@ -1,0 +1,31 @@
+{
+  "category": "painting",
+  "coverImage": "/images/articles/facade-painting-guide.svg",
+  "date": "2025-06-10",
+  "title": {
+    "el": "Ανακαίνιση & Βαφή Πρόσοψης: Ο Οδηγός για Ιδιοκτήτες",
+    "en": "Facade Renovation & Painting: The Homeowner's Guide"
+  },
+  "excerpt": {
+    "el": "Πότε χρειάζεται βαφή η πρόσοψή σας, ποιο χρώμα να διαλέξετε και τι πρέπει να προσέξετε πριν ξεκινήσετε. Σε τέσσερα μέρη.",
+    "en": "When your facade actually needs repainting, which paint to choose, and what to check before you start. In four parts."
+  },
+  "chapters": [
+    {
+      "slug": "why-facades-deteriorate",
+      "title": { "el": "Γιατί Φθείρεται η Πρόσοψη", "en": "Why Facades Deteriorate" }
+    },
+    {
+      "slug": "preparation",
+      "title": { "el": "Η Προετοιμασία Κάνει τη Διαφορά", "en": "Preparation Is Everything" }
+    },
+    {
+      "slug": "choosing-paint",
+      "title": { "el": "Επιλέγοντας το Σωστό Χρώμα", "en": "Choosing the Right Paint" }
+    },
+    {
+      "slug": "permits-longevity",
+      "title": { "el": "Σκαλωσιά, Άδειες & Διάρκεια Ζωής", "en": "Scaffolding, Permits & Longevity" }
+    }
+  ]
+}

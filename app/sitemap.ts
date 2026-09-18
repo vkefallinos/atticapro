@@ -1,13 +1,13 @@
 import type { MetadataRoute } from 'next';
 
 import { locales } from '@/i18n';
-import { getAllArticles } from '@/lib/articles';
+import { getAllGuides } from '@/lib/guides';
 
 const baseUrl = 'https://atticapro.example.com';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticPaths = ['', '/services/insulation', '/services/painting', '/portfolio', '/knowledge-hub', '/contact'];
-  const articles = getAllArticles();
+  const guides = getAllGuides();
 
   const entries: MetadataRoute.Sitemap = [];
 
@@ -18,11 +18,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: new Date(),
       });
     }
-    for (const article of articles) {
+    for (const guide of guides) {
       entries.push({
-        url: `${baseUrl}/${locale}/knowledge-hub/${article.slug}`,
-        lastModified: article.date,
+        url: `${baseUrl}/${locale}/knowledge-hub/${guide.slug}`,
+        lastModified: guide.date,
       });
+      for (const chapter of guide.chapters) {
+        entries.push({
+          url: `${baseUrl}/${locale}/knowledge-hub/${guide.slug}/${chapter.slug}`,
+          lastModified: guide.date,
+        });
+      }
     }
   }
 

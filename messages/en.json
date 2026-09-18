@@ -158,9 +158,17 @@
   "knowledgeHubPage": {
     "title": "Knowledge Hub",
     "subtitle": "Practical tips and technical knowledge on humidity, insulation and painting.",
-    "readMore": "Read More",
     "backToHub": "Back to Knowledge Hub",
-    "minRead": "min read"
+    "minRead": "min read",
+    "chapterCount": "{count} parts",
+    "inThisGuide": "In this guide",
+    "startGuide": "Start the guide",
+    "partLabel": "Part {current} of {total}",
+    "backToGuide": "Back to the guide",
+    "previousPart": "Previous part",
+    "nextPart": "Next part",
+    "guideComplete": "You've finished the guide",
+    "askUs": "Have a question about your own home? Talk to us."
   },
   "contactPage": {
     "title": "Get In Touch",

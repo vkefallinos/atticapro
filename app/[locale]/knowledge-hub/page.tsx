@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import { BookOpen } from 'lucide-react';
 
 import { locales, type Locale } from '@/i18n';
-import { getAllArticles } from '@/lib/articles';
+import { getAllGuides } from '@/lib/guides';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -29,7 +30,7 @@ export default async function KnowledgeHubPage({ params: { locale } }: { params:
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'knowledgeHubPage' });
   const tCommon = await getTranslations({ locale, namespace: 'common' });
-  const articles = getAllArticles();
+  const guides = getAllGuides();
 
   return (
     <div className="container py-16 md:py-24">
@@ -39,24 +40,29 @@ export default async function KnowledgeHubPage({ params: { locale } }: { params:
       </div>
 
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {articles.map((article) => (
-          <Link key={article.slug} href={`/${locale}/knowledge-hub/${article.slug}`}>
+        {guides.map((guide) => (
+          <Link key={guide.slug} href={`/${locale}/knowledge-hub/${guide.slug}`}>
             <Card className="h-full overflow-hidden transition-all hover:-translate-y-1 hover:shadow-md">
               <div className="relative aspect-[16/9] w-full">
                 <Image
-                  src={article.coverImage}
-                  alt={article.title[locale]}
+                  src={guide.coverImage}
+                  alt={guide.title[locale]}
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 33vw"
                 />
+                <span className="absolute bottom-2 right-2 inline-flex items-center gap-1 rounded-full bg-black/60 px-2.5 py-1 text-xs font-medium text-white">
+                  <BookOpen className="h-3 w-3" />
+                  {t('chapterCount', { count: guide.chapters.length })}
+                </span>
               </div>
               <CardContent className="pt-5">
-                <Badge variant={article.category === 'insulation' ? 'secondary' : 'accent'}>
-                  {article.category === 'insulation' ? tCommon('categoryInsulation') : tCommon('categoryPainting')}
+                <Badge variant={guide.category === 'insulation' ? 'secondary' : 'accent'}>
+                  {guide.category === 'insulation' ? tCommon('categoryInsulation') : tCommon('categoryPainting')}
                 </Badge>
-                <h2 className="mt-3 font-display text-lg font-semibold text-primary">{article.title[locale]}</h2>
-                <p className="mt-2 text-sm text-muted-foreground">{article.excerpt[locale]}</p>
+                <h2 className="mt-3 font-display text-lg font-semibold text-primary">{guide.title[locale]}</h2>
+                <p className="mt-2 text-sm text-muted-foreground">{guide.excerpt[locale]}</p>
+                <span className="mt-3 inline-block text-sm font-semibold text-accent">{tCommon('readGuide')}</span>
               </CardContent>
             </Card>
           </Link>

@@ -1,0 +1,31 @@
+{
+  "category": "painting",
+  "coverImage": "/images/articles/interior-painting-guide.svg",
+  "date": "2025-07-02",
+  "title": {
+    "el": "Εσωτερική Ανακαίνιση: Από το Στοκάρισμα μέχρι το Φινίρισμα",
+    "en": "Interior Renovation: From Filling to Finish"
+  },
+  "excerpt": {
+    "el": "Τι πραγματικά κρύβεται πίσω από μια καλή εσωτερική βαφή — και γιατί δεν είναι απλώς «λίγο χρώμα». Σε τέσσερα μέρη.",
+    "en": "What actually goes into a good interior paint job — and why it's never just 'a bit of paint'. In four parts."
+  },
+  "chapters": [
+    {
+      "slug": "why-prep-matters",
+      "title": { "el": "Γιατί η Προετοιμασία Μετράει Περισσότερο", "en": "Why Prep Matters Most" }
+    },
+    {
+      "slug": "paint-types-finishes",
+      "title": { "el": "Τύποι Χρωμάτων & Φινιρίσματα", "en": "Paint Types & Finishes" }
+    },
+    {
+      "slug": "planning-your-project",
+      "title": { "el": "Σχεδιάζοντας το Έργο σας", "en": "Planning Your Project" }
+    },
+    {
+      "slug": "mistakes-to-avoid",
+      "title": { "el": "Λάθη που Πρέπει να Αποφύγετε", "en": "Mistakes to Avoid" }
+    }
+  ]
+}

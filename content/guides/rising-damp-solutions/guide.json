@@ -1,0 +1,31 @@
+{
+  "category": "insulation",
+  "coverImage": "/images/articles/rising-damp-solutions.svg",
+  "date": "2025-03-12",
+  "title": {
+    "el": "Ανερχόμενη Υγρασία: Ο Πλήρης Οδηγός",
+    "en": "Rising Damp: The Complete Guide"
+  },
+  "excerpt": {
+    "el": "Η ανερχόμενη υγρασία μπορεί να καταστρέψει σιωπηλά τα θεμέλια και τους τοίχους του σπιτιού σας. Σε τέσσερα μέρη εξηγούμε τι είναι, πώς την εντοπίζετε και πώς αντιμετωπίζεται οριστικά.",
+    "en": "Rising damp can silently damage your home's foundations and walls. In four parts, we explain what it is, how to spot it, and how to fix it for good."
+  },
+  "chapters": [
+    {
+      "slug": "what-it-is",
+      "title": { "el": "Τι Είναι η Ανερχόμενη Υγρασία", "en": "What Rising Damp Actually Is" }
+    },
+    {
+      "slug": "warning-signs",
+      "title": { "el": "Πώς την Αναγνωρίζετε Έγκαιρα", "en": "Recognizing It Early" }
+    },
+    {
+      "slug": "permanent-fixes",
+      "title": { "el": "Οι Μόνιμες Λύσεις", "en": "The Permanent Fixes" }
+    },
+    {
+      "slug": "prevention",
+      "title": { "el": "Πρόληψη & Μακροχρόνια Φροντίδα", "en": "Prevention & Long-Term Care" }
+    }
+  ]
+}

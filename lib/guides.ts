@@ -1,0 +1,57 @@
+import fs from 'node:fs';
+import path from 'node:path';
+
+import type { Locale } from '@/i18n';
+
+const GUIDES_DIR = path.join(process.cwd(), 'content/guides');
+
+export interface GuideChapterMeta {
+  slug: string;
+  title: { el: string; en: string };
+}
+
+export interface GuideMeta {
+  slug: string;
+  category: 'insulation' | 'painting';
+  coverImage: string;
+  date: string;
+  title: { el: string; en: string };
+  excerpt: { el: string; en: string };
+  chapters: GuideChapterMeta[];
+}
+
+function getGuideSlugs(): string[] {
+  return fs.readdirSync(GUIDES_DIR).filter((entry) => fs.statSync(path.join(GUIDES_DIR, entry)).isDirectory());
+}
+
+export function getAllGuides(): GuideMeta[] {
+  return getGuideSlugs()
+    .map((slug) => {
+      const raw = fs.readFileSync(path.join(GUIDES_DIR, slug, 'guide.json'), 'utf8');
+      return { slug, ...(JSON.parse(raw) as Omit<GuideMeta, 'slug'>) };
+    })
+    .sort((a, b) => (a.date < b.date ? 1 : -1));
+}
+
+export function getGuideBySlug(slug: string): GuideMeta | null {
+  const guidePath = path.join(GUIDES_DIR, slug, 'guide.json');
+  if (!fs.existsSync(guidePath)) return null;
+
+  const raw = fs.readFileSync(guidePath, 'utf8');
+  return { slug, ...(JSON.parse(raw) as Omit<GuideMeta, 'slug'>) };
+}
+
+export function getChapterContent(guideSlug: string, chapterSlug: string, locale: Locale): string | null {
+  const chapterPath = path.join(GUIDES_DIR, guideSlug, `${chapterSlug}.${locale}.mdx`);
+  if (!fs.existsSync(chapterPath)) return null;
+  return fs.readFileSync(chapterPath, 'utf8');
+}
+
+export function getAdjacentChapters(guide: GuideMeta, chapterSlug: string) {
+  const index = guide.chapters.findIndex((chapter) => chapter.slug === chapterSlug);
+  return {
+    index,
+    prev: index > 0 ? guide.chapters[index - 1] : null,
+    next: index >= 0 && index < guide.chapters.length - 1 ? guide.chapters[index + 1] : null,
+  };
+}
