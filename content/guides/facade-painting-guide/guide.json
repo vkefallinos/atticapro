@@ -4,28 +4,46 @@
   "date": "2025-06-10",
   "title": {
     "el": "Ανακαίνιση & Βαφή Πρόσοψης: Ο Οδηγός για Ιδιοκτήτες",
-    "en": "Facade Renovation & Painting: The Homeowner's Guide"
+    "en": "Facade Renovation & Painting: The Homeowner's Guide",
+    "ar": "تجديد وطلاء الواجهات: دليل مالك المنزل"
   },
   "excerpt": {
     "el": "Πότε χρειάζεται βαφή η πρόσοψή σας, ποιο χρώμα να διαλέξετε και τι πρέπει να προσέξετε πριν ξεκινήσετε. Σε τέσσερα μέρη.",
-    "en": "When your facade actually needs repainting, which paint to choose, and what to check before you start. In four parts."
+    "en": "When your facade actually needs repainting, which paint to choose, and what to check before you start. In four parts.",
+    "ar": "متى تحتاج واجهة مبناك فعلًا إلى إعادة الطلاء، وأي دهان تختار، وما الذي يجب فحصه قبل البدء. في أربعة أجزاء."
   },
   "chapters": [
     {
       "slug": "why-facades-deteriorate",
-      "title": { "el": "Γιατί Φθείρεται η Πρόσοψη", "en": "Why Facades Deteriorate" }
+      "title": {
+        "el": "Γιατί Φθείρεται η Πρόσοψη",
+        "en": "Why Facades Deteriorate",
+        "ar": "لماذا تتدهور الواجهات"
+      }
     },
     {
       "slug": "preparation",
-      "title": { "el": "Η Προετοιμασία Κάνει τη Διαφορά", "en": "Preparation Is Everything" }
+      "title": {
+        "el": "Η Προετοιμασία Κάνει τη Διαφορά",
+        "en": "Preparation Is Everything",
+        "ar": "التحضير هو كل شيء"
+      }
     },
     {
       "slug": "choosing-paint",
-      "title": { "el": "Επιλέγοντας το Σωστό Χρώμα", "en": "Choosing the Right Paint" }
+      "title": {
+        "el": "Επιλέγοντας το Σωστό Χρώμα",
+        "en": "Choosing the Right Paint",
+        "ar": "اختيار الدهان المناسب"
+      }
     },
     {
       "slug": "permits-longevity",
-      "title": { "el": "Σκαλωσιά, Άδειες & Διάρκεια Ζωής", "en": "Scaffolding, Permits & Longevity" }
+      "title": {
+        "el": "Σκαλωσιά, Άδειες & Διάρκεια Ζωής",
+        "en": "Scaffolding, Permits & Longevity",
+        "ar": "السقالات والتصاريح ومدة الدوام"
+      }
     }
   ]
 }

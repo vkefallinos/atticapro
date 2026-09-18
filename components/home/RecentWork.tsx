@@ -2,12 +2,11 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { ArrowRight } from 'lucide-react';
 
+import type { Locale } from '@/i18n';
 import { getFeaturedPortfolioItems } from '@/data/portfolio';
 import { BeforeAfterSlider } from '@/components/portfolio/BeforeAfterSlider';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-
-type Locale = 'el' | 'en';
 
 export function RecentWork({ locale }: { locale: Locale }) {
   const t = useTranslations('recentWork');

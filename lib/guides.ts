@@ -7,7 +7,7 @@ const GUIDES_DIR = path.join(process.cwd(), 'content/guides');
 
 export interface GuideChapterMeta {
   slug: string;
-  title: { el: string; en: string };
+  title: Record<Locale, string>;
 }
 
 export interface GuideMeta {
@@ -15,8 +15,8 @@ export interface GuideMeta {
   category: 'insulation' | 'painting';
   coverImage: string;
   date: string;
-  title: { el: string; en: string };
-  excerpt: { el: string; en: string };
+  title: Record<Locale, string>;
+  excerpt: Record<Locale, string>;
   chapters: GuideChapterMeta[];
 }
 

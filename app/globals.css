@@ -43,6 +43,14 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Cairo has no italic/script styling to match Fraunces or Caveat, so
+     Arabic content is rendered entirely in one clean, readable family. */
+  html:lang(ar) {
+    --font-inter: var(--font-arabic);
+    --font-fraunces: var(--font-arabic);
+    --font-caveat: var(--font-arabic);
+  }
 }
 
 .hero-gradient {

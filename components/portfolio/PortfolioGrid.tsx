@@ -5,13 +5,13 @@ import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { ArrowRight } from 'lucide-react';
 
+import type { Locale } from '@/i18n';
 import type { PortfolioCategory, PortfolioItem } from '@/data/portfolio';
 import { BeforeAfterSlider } from '@/components/portfolio/BeforeAfterSlider';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 
-type Locale = 'el' | 'en';
 type Filter = 'all' | PortfolioCategory;
 
 export function PortfolioGrid({ items, locale }: { items: PortfolioItem[]; locale: Locale }) {

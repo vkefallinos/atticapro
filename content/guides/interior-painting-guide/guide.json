@@ -4,28 +4,46 @@
   "date": "2025-07-02",
   "title": {
     "el": "Εσωτερική Ανακαίνιση: Από το Στοκάρισμα μέχρι το Φινίρισμα",
-    "en": "Interior Renovation: From Filling to Finish"
+    "en": "Interior Renovation: From Filling to Finish",
+    "ar": "التجديد الداخلي: من المعجون إلى اللمسة الأخيرة"
   },
   "excerpt": {
     "el": "Τι πραγματικά κρύβεται πίσω από μια καλή εσωτερική βαφή — και γιατί δεν είναι απλώς «λίγο χρώμα». Σε τέσσερα μέρη.",
-    "en": "What actually goes into a good interior paint job — and why it's never just 'a bit of paint'. In four parts."
+    "en": "What actually goes into a good interior paint job — and why it's never just 'a bit of paint'. In four parts.",
+    "ar": "ما الذي يقف حقًا وراء طلاء داخلي جيد — ولماذا لا يتعلق الأمر أبدًا بـ«قليل من الدهان» فقط. في أربعة أجزاء."
   },
   "chapters": [
     {
       "slug": "why-prep-matters",
-      "title": { "el": "Γιατί η Προετοιμασία Μετράει Περισσότερο", "en": "Why Prep Matters Most" }
+      "title": {
+        "el": "Γιατί η Προετοιμασία Μετράει Περισσότερο",
+        "en": "Why Prep Matters Most",
+        "ar": "لماذا التحضير هو الأهم"
+      }
     },
     {
       "slug": "paint-types-finishes",
-      "title": { "el": "Τύποι Χρωμάτων & Φινιρίσματα", "en": "Paint Types & Finishes" }
+      "title": {
+        "el": "Τύποι Χρωμάτων & Φινιρίσματα",
+        "en": "Paint Types & Finishes",
+        "ar": "أنواع الدهانات واللمسات النهائية"
+      }
     },
     {
       "slug": "planning-your-project",
-      "title": { "el": "Σχεδιάζοντας το Έργο σας", "en": "Planning Your Project" }
+      "title": {
+        "el": "Σχεδιάζοντας το Έργο σας",
+        "en": "Planning Your Project",
+        "ar": "التخطيط لمشروعك"
+      }
     },
     {
       "slug": "mistakes-to-avoid",
-      "title": { "el": "Λάθη που Πρέπει να Αποφύγετε", "en": "Mistakes to Avoid" }
+      "title": {
+        "el": "Λάθη που Πρέπει να Αποφύγετε",
+        "en": "Mistakes to Avoid",
+        "ar": "أخطاء يجب تجنبها"
+      }
     }
   ]
 }

@@ -4,28 +4,46 @@
   "date": "2025-05-20",
   "title": {
     "el": "Στεγανοποίηση & Θερμομόνωση Ταράτσας: Ο Πλήρης Οδηγός",
-    "en": "Roof Waterproofing & Insulation: The Complete Guide"
+    "en": "Roof Waterproofing & Insulation: The Complete Guide",
+    "ar": "عزل السطح المائي والحراري: الدليل الكامل"
   },
   "excerpt": {
     "el": "Γιατί «στάζει» η ταράτσα σας, ποια συστήματα στεγανοποίησης υπάρχουν και πώς η θερμομόνωση μειώνει τους λογαριασμούς. Σε τέσσερα μέρη.",
-    "en": "Why your roof leaks, which waterproofing systems exist, and how insulation cuts your energy bills. In four parts."
+    "en": "Why your roof leaks, which waterproofing systems exist, and how insulation cuts your energy bills. In four parts.",
+    "ar": "لماذا يتسرب الماء من سطح منزلك، وما هي أنظمة العزل المائي المتاحة، وكيف يخفض العزل الحراري فواتير الطاقة. في أربعة أجزاء."
   },
   "chapters": [
     {
       "slug": "why-roofs-fail",
-      "title": { "el": "Γιατί Αστοχούν οι Ταράτσες", "en": "Why Flat Roofs Fail" }
+      "title": {
+        "el": "Γιατί Αστοχούν οι Ταράτσες",
+        "en": "Why Flat Roofs Fail",
+        "ar": "لماذا تتعطل الأسطح المسطحة"
+      }
     },
     {
       "slug": "warning-signs",
-      "title": { "el": "Διαβάζοντας τα Προειδοποιητικά Σημάδια", "en": "Reading the Warning Signs" }
+      "title": {
+        "el": "Διαβάζοντας τα Προειδοποιητικά Σημάδια",
+        "en": "Reading the Warning Signs",
+        "ar": "قراءة علامات التحذير"
+      }
     },
     {
       "slug": "waterproofing-systems",
-      "title": { "el": "Συστήματα Στεγανοποίησης", "en": "Waterproofing Systems Compared" }
+      "title": {
+        "el": "Συστήματα Στεγανοποίησης",
+        "en": "Waterproofing Systems Compared",
+        "ar": "مقارنة أنظمة العزل المائي"
+      }
     },
     {
       "slug": "insulation-cost-maintenance",
-      "title": { "el": "Θερμομόνωση, Κόστος & Συντήρηση", "en": "Insulation, Cost & Maintenance" }
+      "title": {
+        "el": "Θερμομόνωση, Κόστος & Συντήρηση",
+        "en": "Insulation, Cost & Maintenance",
+        "ar": "العزل الحراري والتكلفة والصيانة"
+      }
     }
   ]
 }

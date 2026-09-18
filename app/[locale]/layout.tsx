@@ -33,6 +33,7 @@ export async function generateMetadata({
       languages: {
         el: '/el',
         en: '/en',
+        ar: '/ar',
       },
     },
     openGraph: {
@@ -58,7 +59,7 @@ export default async function LocaleLayout({
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
-      <LangSync locale={locale} />
+      <LangSync locale={locale as Locale} />
       <Navbar locale={locale} />
       <main className="flex-1">{children}</main>
       <Footer locale={locale} />
