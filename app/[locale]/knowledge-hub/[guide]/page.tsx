@@ -7,6 +7,7 @@ import { ArrowLeft, ArrowRight } from 'lucide-react';
 
 import { locales, type Locale } from '@/i18n';
 import { getAllGuides, getGuideBySlug } from '@/lib/guides';
+import { assetPath } from '@/lib/site-config';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 
@@ -64,7 +65,13 @@ export default async function GuideOverviewPage({
           </div>
 
           <div className="relative mt-8 aspect-[16/9] w-full overflow-hidden rounded-xl">
-            <Image src={guide.coverImage} alt={guide.title[locale]} fill className="object-cover" priority />
+            <Image
+              src={assetPath(guide.coverImage)}
+              alt={guide.title[locale]}
+              fill
+              className="object-cover"
+              priority
+            />
           </div>
         </div>
       </section>

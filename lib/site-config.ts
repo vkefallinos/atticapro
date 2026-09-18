@@ -1,3 +1,17 @@
+const isGithubPages = process.env.NEXT_PUBLIC_GITHUB_PAGES === 'true';
+
+export const basePath = isGithubPages ? '/atticapro' : '';
+export const siteUrl = isGithubPages ? 'https://vkefallinos.github.io/atticapro' : 'https://atticapro.example.com';
+
+/**
+ * next/image with `unoptimized: true` doesn't auto-prefix basePath onto raw
+ * string `src` values (unlike next/link or the default image loader), so
+ * every local image src needs to go through this.
+ */
+export function assetPath(path: string) {
+  return `${basePath}${path}`;
+}
+
 export const siteConfig = {
   name: 'AtticaPro',
   phoneDisplay: '+30 690 000 0000',

@@ -4,6 +4,7 @@ import { useTranslations } from 'next-intl';
 import { ArrowRight } from 'lucide-react';
 
 import { Button } from '@/components/ui/button';
+import { assetPath } from '@/lib/site-config';
 
 export function Hero({ locale }: { locale: string }) {
   const t = useTranslations('hero');
@@ -54,7 +55,7 @@ export function Hero({ locale }: { locale: string }) {
           <div className="relative aspect-[6/5] w-full -rotate-2 rounded-lg border-4 border-white bg-white shadow-2xl">
             <div className="relative h-full w-full overflow-hidden rounded-sm">
               <Image
-                src="/images/hero/hero-illustration.svg"
+                src={assetPath('/images/hero/hero-illustration.svg')}
                 alt="Επαγγελματίας βάφει τοίχο με ρολό ενώ ετοιμάζεται μόνωση"
                 fill
                 priority

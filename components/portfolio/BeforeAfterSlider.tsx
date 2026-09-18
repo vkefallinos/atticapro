@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { ChevronsLeftRight } from 'lucide-react';
 
 import { cn } from '@/lib/utils';
+import { assetPath } from '@/lib/site-config';
 
 interface BeforeAfterSliderProps {
   beforeImage: string;
@@ -68,7 +69,7 @@ export function BeforeAfterSlider({
       onPointerLeave={onPointerUp}
     >
       <Image
-        src={afterImage}
+        src={assetPath(afterImage)}
         alt={`${alt} - ${afterLabel}`}
         fill
         className="pointer-events-none select-none object-cover"
@@ -80,7 +81,7 @@ export function BeforeAfterSlider({
         style={{ width: `${position}%` }}
       >
         <Image
-          src={beforeImage}
+          src={assetPath(beforeImage)}
           alt={`${alt} - ${beforeLabel}`}
           fill
           className="select-none object-cover"

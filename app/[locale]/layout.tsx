@@ -1,23 +1,14 @@
 import type { Metadata } from 'next';
-import { Inter, Fraunces, Caveat } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 
 import { locales, type Locale } from '@/i18n';
+import { siteUrl } from '@/lib/site-config';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { FloatingActionButton } from '@/components/layout/FloatingActionButton';
-import '../globals.css';
-
-const inter = Inter({ subsets: ['latin', 'greek'], variable: '--font-inter' });
-const fraunces = Fraunces({
-  subsets: ['latin'],
-  variable: '--font-fraunces',
-  weight: ['500', '600', '700'],
-  style: ['normal', 'italic'],
-});
-const caveat = Caveat({ subsets: ['latin'], variable: '--font-caveat', weight: ['600', '700'] });
+import { LangSync } from '@/components/layout/LangSync';
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
@@ -37,7 +28,7 @@ export async function generateMetadata({
       template: `%s | ${t('siteName')}`,
     },
     description: t('defaultDescription'),
-    metadataBase: new URL('https://atticapro.example.com'),
+    metadataBase: new URL(siteUrl),
     alternates: {
       languages: {
         el: '/el',
@@ -66,15 +57,12 @@ export default async function LocaleLayout({
   const messages = await getMessages();
 
   return (
-    <html lang={locale} className={`${inter.variable} ${fraunces.variable} ${caveat.variable}`}>
-      <body className="flex min-h-screen flex-col font-sans antialiased pb-16 md:pb-0">
-        <NextIntlClientProvider locale={locale} messages={messages}>
-          <Navbar locale={locale} />
-          <main className="flex-1">{children}</main>
-          <Footer locale={locale} />
-          <FloatingActionButton />
-        </NextIntlClientProvider>
-      </body>
-    </html>
+    <NextIntlClientProvider locale={locale} messages={messages}>
+      <LangSync locale={locale} />
+      <Navbar locale={locale} />
+      <main className="flex-1">{children}</main>
+      <Footer locale={locale} />
+      <FloatingActionButton />
+    </NextIntlClientProvider>
   );
 }

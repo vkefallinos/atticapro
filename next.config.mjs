@@ -2,8 +2,15 @@ import createNextIntlPlugin from 'next-intl/plugin';
 
 const withNextIntl = createNextIntlPlugin('./i18n.ts');
 
+const isGithubPages = process.env.NEXT_PUBLIC_GITHUB_PAGES === 'true';
+const basePath = isGithubPages ? '/atticapro' : '';
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: isGithubPages ? 'export' : undefined,
+  basePath,
+  assetPrefix: basePath ? `${basePath}/` : undefined,
+  trailingSlash: true,
   images: {
     unoptimized: true,
     dangerouslyAllowSVG: true,

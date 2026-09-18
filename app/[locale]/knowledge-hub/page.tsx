@@ -6,6 +6,7 @@ import { BookOpen } from 'lucide-react';
 
 import { locales, type Locale } from '@/i18n';
 import { getAllGuides } from '@/lib/guides';
+import { assetPath } from '@/lib/site-config';
 import { Badge } from '@/components/ui/badge';
 import { Card, CardContent } from '@/components/ui/card';
 
@@ -45,7 +46,7 @@ export default async function KnowledgeHubPage({ params: { locale } }: { params:
             <Card className="h-full overflow-hidden transition-all hover:-translate-y-1 hover:shadow-md">
               <div className="relative aspect-[16/9] w-full">
                 <Image
-                  src={guide.coverImage}
+                  src={assetPath(guide.coverImage)}
                   alt={guide.title[locale]}
                   fill
                   className="object-cover"
