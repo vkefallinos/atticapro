@@ -1,7 +1,9 @@
 'use client';
 
 import { useState } from 'react';
+import Link from 'next/link';
 import { useTranslations } from 'next-intl';
+import { ArrowRight } from 'lucide-react';
 
 import type { PortfolioCategory, PortfolioItem } from '@/data/portfolio';
 import { BeforeAfterSlider } from '@/components/portfolio/BeforeAfterSlider';
@@ -59,6 +61,12 @@ export function PortfolioGrid({ items, locale }: { items: PortfolioItem[]; local
               <h3 className="mt-2 font-semibold text-primary">{item.title[locale]}</h3>
               <p className="mt-1 text-sm text-muted-foreground">{item.description[locale]}</p>
               <p className="mt-1 text-xs text-muted-foreground">{item.location}</p>
+              <Link
+                href={`/${locale}/knowledge-hub/${item.relatedArticle}`}
+                className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-accent hover:underline"
+              >
+                {tCommon('readGuide')} <ArrowRight className="h-3.5 w-3.5" />
+              </Link>
             </div>
           </div>
         ))}

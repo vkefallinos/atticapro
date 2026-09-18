@@ -45,6 +45,12 @@ export function RecentWork({ locale }: { locale: Locale }) {
                 </Badge>
                 <h3 className="mt-2 font-semibold text-primary">{item.title[locale]}</h3>
                 <p className="mt-1 text-sm text-muted-foreground">{item.description[locale]}</p>
+                <Link
+                  href={`/${locale}/knowledge-hub/${item.relatedArticle}`}
+                  className="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-accent hover:underline"
+                >
+                  {tCommon('readGuide')} <ArrowRight className="h-3.5 w-3.5" />
+                </Link>
               </div>
             </div>
           ))}

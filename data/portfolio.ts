@@ -15,6 +15,7 @@ export interface PortfolioItem {
     el: string;
     en: string;
   };
+  relatedArticle: string;
 }
 
 export const portfolioItems: PortfolioItem[] = [
@@ -33,6 +34,7 @@ export const portfolioItems: PortfolioItem[] = [
       el: 'Οριστική αντιμετώπιση ανερχόμενης υγρασίας σε υπόγειο κατοικίας με στεγανωτικά τσιμεντοειδή επιχρίσματα.',
       en: 'Permanent treatment of rising damp in a residential basement using cementitious waterproofing coatings.',
     },
+    relatedArticle: 'rising-damp-solutions',
   },
   {
     id: 'roof-insulation',
@@ -49,6 +51,7 @@ export const portfolioItems: PortfolioItem[] = [
       el: 'Πλήρης στεγανοποίηση δώματος με ελαστομερείς ασφαλτικές μεμβράνες και θερμομονωτικά φύλλα.',
       en: 'Complete roof waterproofing with elastomeric bituminous membranes and thermal insulation boards.',
     },
+    relatedArticle: 'roof-waterproofing-insulation-guide',
   },
   {
     id: 'facade-painting',
@@ -65,6 +68,7 @@ export const portfolioItems: PortfolioItem[] = [
       el: 'Πλήρης βαφή εξωτερικής πρόσοψης με σιλικονούχα χρώματα ανθεκτικά στις καιρικές συνθήκες.',
       en: 'Complete exterior facade painting with weather-resistant silicone-based paints.',
     },
+    relatedArticle: 'facade-painting-guide',
   },
   {
     id: 'interior-painting',
@@ -81,6 +85,7 @@ export const portfolioItems: PortfolioItem[] = [
       el: 'Πλήρης ανακαίνιση με στοκαρίσματα, αστάρια και οικολογικά χρώματα σε διαμέρισμα 90τμ.',
       en: 'Full renovation with filling, priming and eco-friendly paints in a 90sqm apartment.',
     },
+    relatedArticle: 'interior-painting-guide',
   },
 ];
 
