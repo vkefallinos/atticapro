@@ -14,10 +14,10 @@ export function assetPath(path: string) {
 
 export const siteConfig = {
   name: 'AtticaPro',
-  phoneDisplay: '+30 690 000 0000',
-  phoneHref: 'tel:+306900000000',
-  whatsappHref: 'https://wa.me/306900000000',
-  viberHref: 'viber://chat?number=%2B306900000000',
+  phoneDisplay: '+30 693 159 0153',
+  phoneHref: 'tel:+306931590153',
+  whatsappHref: 'https://wa.me/306933347282',
+  viberHref: 'viber://chat?number=%2B306933347282',
   email: 'info@atticapro.gr',
   formEndpoint: 'https://api.web3forms.com/submit',
   formAccessKey: 'YOUR_WEB3FORMS_ACCESS_KEY',
