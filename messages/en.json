@@ -17,14 +17,9 @@
   "hero": {
     "eyebrow": "Professional insulation & painting in Attica",
     "title": "Permanent solutions for <mark>humidity</mark> and space renovation in Attica",
-    "subtitle": "Over 12 years of experience in insulation, waterproofing and painting. We eliminate humidity at its root and give new life to your home or business.",
+    "subtitle": "Professional insulation, waterproofing and painting. We eliminate humidity at its root and give new life to your home or business.",
     "ctaPrimary": "Free Estimate",
-    "ctaSecondary": "View Our Work",
-    "badgeNumber": "12+",
-    "badgeLabel": "years on the tools",
-    "statYears": "Years of Experience",
-    "statProjects": "Completed Projects",
-    "statWarranty": "Years of Warranty"
+    "ctaSecondary": "View Our Work"
   },
   "servicesSnippet": {
     "title": "Our Services",
@@ -89,7 +84,7 @@
   },
   "insulationPage": {
     "title": "Insulation & Waterproofing",
-    "subtitle": "Permanent solutions against humidity, with high-durability materials and 12+ years of expertise.",
+    "subtitle": "Permanent solutions against humidity, with high-durability materials and proven expertise.",
     "heroCta": "Request Free Estimate",
     "sections": [
       {

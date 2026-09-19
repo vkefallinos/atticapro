@@ -34,21 +34,6 @@ export function Hero({ locale }: { locale: string }) {
               <Link href={`/${locale}/portfolio`}>{t('ctaSecondary')}</Link>
             </Button>
           </div>
-
-          <dl className="mt-12 grid grid-cols-3 gap-6 border-t border-dashed border-border pt-8">
-            <div>
-              <dt className="font-hand text-4xl text-accent">12+</dt>
-              <dd className="mt-1 text-sm text-muted-foreground">{t('statYears')}</dd>
-            </div>
-            <div>
-              <dt className="font-hand text-4xl text-accent">300+</dt>
-              <dd className="mt-1 text-sm text-muted-foreground">{t('statProjects')}</dd>
-            </div>
-            <div>
-              <dt className="font-hand text-4xl text-accent">10</dt>
-              <dd className="mt-1 text-sm text-muted-foreground">{t('statWarranty')}</dd>
-            </div>
-          </dl>
         </div>
 
         <div className="relative mx-auto w-full max-w-lg">
@@ -65,13 +50,6 @@ export function Hero({ locale }: { locale: string }) {
             </div>
             <span className="tape -top-3 left-8 -rotate-6" />
             <span className="tape -top-3 right-8 rotate-3" />
-          </div>
-
-          <div className="absolute -bottom-6 -right-4 flex h-24 w-24 flex-col rotate-6 items-center justify-center gap-0.5 rounded-full border-2 border-dashed border-accent bg-background text-center shadow-lg sm:h-28 sm:w-28">
-            <span className="font-hand text-2xl leading-none text-accent">{t('badgeNumber')}</span>
-            <span className="px-3 text-[11px] font-medium leading-tight text-muted-foreground">
-              {t('badgeLabel')}
-            </span>
           </div>
         </div>
       </div>
