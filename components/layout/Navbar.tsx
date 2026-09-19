@@ -37,7 +37,7 @@ export function Navbar({ locale }: { locale: string }) {
         </nav>
 
         <div className="flex items-center gap-3">
-          <LocaleSwitcher className="hidden md:flex" />
+          <LocaleSwitcher />
           <Button asChild variant="accent" size="sm" className="hidden md:inline-flex">
             <Link href={`/${locale}/contact`}>{t('getQuote')}</Link>
           </Button>
